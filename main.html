@@ -1,17 +1,48 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8" />
+  <title>Center Text</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Body background using the provided image file */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      /* change the URL if you saved the image with a different name or location */
+      background-image: url('/mnt/data/d77cbc5f-e3b1-4392-988e-9f37a9c179cc.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* ensure content is readable on the image */
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Styling for the centered heading */
+    h1 {
+      color: #fff;               /* white text as required */
+      font-size: 2rem;
+      margin: 0;
+      padding: 12px 18px;
+      background: rgba(0,0,0,0.18); /* subtle translucent backing for legibility */
+      border-radius: 6px;
+      text-transform: none;
+      letter-spacing: 0.2px;
+    }
+
+    /* Make the page scale nicely on small screens */
+    @media (max-width: 480px) {
+      h1 { font-size: 1.2rem; padding: 10px 14px; }
+    }
+  </style>
 </head>
-
-<body style="background-image: url('https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg');">
-	<!-- the entire body must be written by student -->
-<script type="text/javascript" src="./script.js">
-</script>
-	<h1 style="text-align: center; color: white;">Welcome to the new Era of Artificial intelligence</h1>
-
+<body>
+  <!-- Using <center> tag to center the h1 as requested -->
+  <center>
+    <h1>Welcome to the new Era of Artificial intelligence</h1>
+  </center>
 </body>
-
 </html>
